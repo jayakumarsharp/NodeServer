@@ -1,0 +1,111 @@
+﻿#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('ReportFrameworkAzure:server');
+var http = require('http');
+var cluster = require('cluster');
+
+// if (cluster.isMaster) {
+//     var numWorkers = require('os').cpus().length;
+//     console.log('Master cluster setting up ' + numWorkers + ' workers...');
+//     for (var i = 0; i < numWorkers; i++) {
+//         cluster.fork();
+//     }
+//     cluster.on('online', function (worker) {
+//         console.log('Worker ' + worker.process.pid + ' is online');
+//     });
+//     cluster.on('exit', function (worker, code, signal) {
+//         console.log('Worker ' + worker.process.pid + ' died with code: ' + code + ', and signal: ' + signal);
+//         if (code != 0) {
+//             console.log("Worker crashed! Spawning a replacement.");
+//             console.log('Starting a new worker');
+//             cluster.fork();
+//         }
+//     });
+
+//     var model = require(__base + "Models/PricingSheetModel.js");
+//     var TimerJob = require('timer-jobs');
+
+//     var someTimer = new TimerJob({ interval: 60000 }, function (done) {
+//         console.log('hey logged for a minute');
+//         model.PricingModel.ReleaseSheetWhenExpired('');
+//         done();
+//     });
+
+//     someTimer.start();
+
+// } else {
+
+console.log('Date Time');
+/**
+ * Get port from environment and store in Express.
+ */
+var models = require(__base + "Schema");
+models.sequelize.sync()
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+var server = http.createServer(app);
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+function normalizePort(val) {
+    var port = parseInt(val, 10);
+    if (isNaN(port)) {
+        // named pipe
+        return val;
+    }
+    if (port >= 0) {
+        // port number
+        return port;
+    }
+    return false;
+}
+
+
+function onError(error) {
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
+
+    var bind = typeof port === 'string'
+        ? 'Pipe ' + port
+        : 'Port ' + port;
+
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
+    }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+    var addr = server.address();
+    var bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+}
+
+
+//}
+
+

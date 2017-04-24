@@ -1,0 +1,36 @@
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+Port 3000 is already in use
+[31merror[39m: uncaughtException: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log' date=Fri Aug 12 2016 19:02:19 GMT+0530 (India Standard Time), pid=7344, uid=null, gid=null, cwd=C:\Windows\system32, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.1, argv=[C:\Program Files\nodejs\node.exe, D:\Servion Projects\Pricing Tool\ReportFrameworkAzure\bin\www], rss=111169536, heapTotal=94775120, heapUsed=66707560, loadavg=[0, 0, 0], uptime=89552.6870992, trace=[column=null, file=null, function=Error, line=null, method=null, native=true], stack=[Error: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log',     at Error (native)]
+[31merror[39m: uncaughtException: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log' date=Fri Aug 12 2016 19:02:19 GMT+0530 (India Standard Time), pid=7344, uid=null, gid=null, cwd=C:\Windows\system32, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.1, argv=[C:\Program Files\nodejs\node.exe, D:\Servion Projects\Pricing Tool\ReportFrameworkAzure\bin\www], rss=111718400, heapTotal=94775120, heapUsed=66834888, loadavg=[0, 0, 0], uptime=89552.7027186, trace=[column=null, file=null, function=Error, line=null, method=null, native=true], stack=[Error: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log',     at Error (native)]
+[31merror[39m: uncaughtException: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log' date=Tue Aug 16 2016 11:08:17 GMT+0530 (India Standard Time), pid=2104, uid=null, gid=null, cwd=C:\Windows\system32, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.1, argv=[C:\Program Files\nodejs\node.exe, D:\Servion Projects\Pricing Tool\ReportFrameworkAzure\bin\www], rss=93958144, heapTotal=93710160, heapUsed=64395664, loadavg=[0, 0, 0], uptime=137.43886, trace=[column=null, file=null, function=Error, line=null, method=null, native=true], stack=[Error: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log',     at Error (native)]
+[31merror[39m: uncaughtException: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log' date=Tue Aug 16 2016 11:08:17 GMT+0530 (India Standard Time), pid=2104, uid=null, gid=null, cwd=C:\Windows\system32, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.1, argv=[C:\Program Files\nodejs\node.exe, D:\Servion Projects\Pricing Tool\ReportFrameworkAzure\bin\www], rss=94269440, heapTotal=93710160, heapUsed=64526072, loadavg=[0, 0, 0], uptime=137.43886, trace=[column=null, file=null, function=Error, line=null, method=null, native=true], stack=[Error: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log',     at Error (native)]
+[31merror[39m: uncaughtException: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log' date=Wed Aug 17 2016 14:24:24 GMT+0530 (India Standard Time), pid=2372, uid=null, gid=null, cwd=C:\Windows\system32, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.1, argv=[C:\Program Files\nodejs\node.exe, D:\Servion Projects\Pricing Tool\ReportFrameworkAzure\bin\www], rss=112164864, heapTotal=94775120, heapUsed=66717896, loadavg=[0, 0, 0], uptime=55.9512052, trace=[column=null, file=null, function=Error, line=null, method=null, native=true], stack=[Error: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log',     at Error (native)]
+[31merror[39m: uncaughtException: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log' date=Wed Aug 17 2016 14:24:24 GMT+0530 (India Standard Time), pid=2372, uid=null, gid=null, cwd=C:\Windows\system32, execPath=C:\Program Files\nodejs\node.exe, version=v4.4.1, argv=[C:\Program Files\nodejs\node.exe, D:\Servion Projects\Pricing Tool\ReportFrameworkAzure\bin\www], rss=112553984, heapTotal=94775120, heapUsed=66845088, loadavg=[0, 0, 0], uptime=55.9512052, trace=[column=null, file=null, function=Error, line=null, method=null, native=true], stack=[Error: ENOENT: no such file or directory, open 'C:\Windows\system32\logs\app.log',     at Error (native)]
